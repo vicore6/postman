@@ -17,7 +17,7 @@ class MobileBankApiTestPost {
                 .when()// Выполняемые действия
                 .post("/post")
                 .then()// Проверки
-                .statusCode(200)
+                .statusCode(205)
                 .body("data", equalTo("привет"))
         ;
     }
